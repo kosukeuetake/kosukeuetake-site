@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="section-shell">
+  <p class="kicker">Writing</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ delimit .Params.authors ", " }}</p>
+  {{ with .Params.publication }}<p class="publication-line">{{ . }}</p>{{ end }}
+  {{ with .Params.abstract }}<p class="placeholder-note">{{ . }}</p>{{ end }}
+  {{ with .Params.links }}
+    <p>
+      {{ range . }}<a href="{{ .url | relURL }}">{{ .name }}</a> {{ end }}
+    </p>
+  {{ end }}
+  {{ .Content }}
+  {{ partial "related_finder.html" . }}
+</article>
+{{ end }}

@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="section-shell">
+  <p class="kicker">Research</p>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div data-filter-tabs>
+    <button class="tab-btn" data-tab="all">All</button>
+    <button class="tab-btn" data-tab="report">Working Papers</button>
+    <button class="tab-btn" data-tab="work_in_progress">Work in Progress</button>
+    <button class="tab-btn" data-tab="journal_article">Journal Articles</button>
+  </div>
+  {{ range .Pages }}
+    {{ $status := index .Params.publication_types 0 }}
+    {{ if in (lower (.Params.publication | default "")) "working paper" }}{{ $status = "work_in_progress" }}{{ end }}
+    <article class="paper-card" data-tab="{{ $status }}">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ delimit .Params.authors ", " }}</p>
+      {{ with .Params.publication }}<p class="publication-line">{{ . }}</p>{{ end }}
+      {{ with .Params.abstract }}<p>{{ . }}</p>{{ end }}
+      {{ with .Params.links }}
+        <p class="paper-links">
+          {{ range . }}<a href="{{ .url | relURL }}">{{ .name }}</a>{{ end }}
+        </p>
+      {{ end }}
+    </article>
+  {{ end }}
+</section>
+<script>
+  document.querySelectorAll('.tab-btn').forEach((button) => {
+    button.addEventListener('click', () => {
+      const tab = button.dataset.tab;
+      document.querySelectorAll('[data-tab]').forEach((item) => {
+        item.hidden = tab !== 'all' && item.dataset.tab !== tab;
+      });
+    });
+  });
+</script>
+{{ end }}

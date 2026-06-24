@@ -1,0 +1,13 @@
+<header class="site-nav">
+  <a class="site-brand" href="{{ "" | relURL }}">{{ site.Title }}</a>
+  <nav class="site-nav-links" aria-label="Primary navigation">
+    {{ range site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+    <button class="search-icon-button" type="button" data-search-open aria-label="Search">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+</header>

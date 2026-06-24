@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+    {{ $css := resources.Get "css/custom.css" }}
+    {{ if $css }}<link rel="stylesheet" href="{{ $css.RelPermalink }}">{{ end }}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {{ partial "components/headers/navbar.html" . }}
+    <main id="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "site_footer.html" . }}
+    {{ partial "components/search-modal.html" . }}
+  </body>
+</html>

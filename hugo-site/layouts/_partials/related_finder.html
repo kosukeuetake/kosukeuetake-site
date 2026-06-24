@@ -1,0 +1,10 @@
+{{ $current := . }}
+{{ $related := where site.RegularPages "RelPermalink" "ne" .RelPermalink | first 3 }}
+{{ with $related }}
+<aside class="paper-card">
+  <h2>See Also</h2>
+  {{ range . }}
+    <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  {{ end }}
+</aside>
+{{ end }}

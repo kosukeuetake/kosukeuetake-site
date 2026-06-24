@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="section-shell">
+  <p class="kicker">Software</p>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <article class="paper-card">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.abstract }}<p>{{ . }}</p>{{ end }}
+    </article>
+  {{ end }}
+</section>
+{{ end }}

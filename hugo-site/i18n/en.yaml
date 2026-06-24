@@ -1,0 +1,8 @@
+- id: download_pdf
+  translation: "Download PDF"
+- id: publisher_version
+  translation: "Publisher's Version"
+- id: view_all
+  translation: "View all"
+- id: search
+  translation: "Search"

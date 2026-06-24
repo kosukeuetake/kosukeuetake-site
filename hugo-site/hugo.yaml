@@ -1,0 +1,58 @@
+baseURL: "https://kosukeuetake.github.io/kosukeuetake-site/"
+title: "Kosuke Uetake"
+languageCode: en-us
+
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+params:
+  appearance:
+    theme_day: custom
+    theme_night: custom
+    color_mode: light
+    font: native
+    font_size: L
+  header:
+    navbar:
+      enable: true
+      show_search: true
+      logo:
+        text: "Kosuke Uetake"
+  features:
+    search:
+      provider: flexsearch
+  extensions:
+    css:
+      - css/custom.css
+
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+
+permalinks:
+  publication: /publication/:slug/
+  talk: /talk/:slug/
+  software: /software/:slug/
+
+menu:
+  main:
+    - name: Bio & C.V.
+      url: /bio/
+      weight: 10
+    - name: Research
+      url: /publication/
+      weight: 20
+    - name: Software
+      url: /software/
+      weight: 40
+    - name: Teaching
+      url: /teaching/
+      weight: 60
+    - name: Contact
+      url: /contact/
+      weight: 70
