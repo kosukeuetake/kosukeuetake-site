@@ -122,6 +122,13 @@ summary:focus-visible {
   text-transform: uppercase;
 }
 
+.hero-title {
+  color: var(--color-accent-dark);
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
 .placeholder-note {
   border-left: 4px solid var(--color-accent);
   padding-left: 1rem;
