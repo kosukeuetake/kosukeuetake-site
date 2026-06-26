@@ -1,7 +1,7 @@
 ---
 title: "Passive and Active Attention and Inattention to Baseball Telecasts: Implications for Content (Re-)Design"
 date: 2024-03-01
-authors: ["Kosuke Uetake", "Xiao Liu", "Matt Shum"]
+authors: ["Xiao Liu", "Matt Shum", "Kosuke Uetake"]
 publication_types: ["report"]
 publication: "Working paper, March 2024"
 abstract: "Research on passive and active attention in baseball telecasts and implications for content design."

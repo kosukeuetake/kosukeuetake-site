@@ -1,7 +1,7 @@
 ---
 title: "Effectiveness of Product Recommendation under Time and Social Pressure"
 date: 2019-01-01
-authors: ["Kosuke Uetake", "Kohei Kawaguchi", "Yasutora Watanabe"]
+authors: ["Kohei Kawaguchi", "Kosuke Uetake", "Yasutora Watanabe"]
 publication_types: ["journal_article"]
 publication: "Marketing Science, 2019"
 abstract: "Research on product recommendations under time and social pressure."
