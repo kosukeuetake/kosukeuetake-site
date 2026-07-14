@@ -7,7 +7,7 @@
     <button class="tab-btn" data-tab="all">All</button>
     <button class="tab-btn" data-tab="report">Working Papers</button>
     <button class="tab-btn" data-tab="work_in_progress">Work in Progress</button>
-    <button class="tab-btn" data-tab="journal_article">Journal Articles</button>
+    <button class="tab-btn" data-tab="journal_article">Accepted Papers</button>
   </div>
   {{ range .Pages }}
     {{ $status := index .Params.publication_types 0 }}
