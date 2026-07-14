@@ -124,6 +124,11 @@ nav a {
   box-shadow: 0 10px 28px rgba(45, 41, 38, 0.14);
 }
 
+.hero-media {
+  display: grid;
+  justify-items: center;
+}
+
 .eyebrow,
 .entry span {
   margin: 0 0 10px;
@@ -183,6 +188,40 @@ h4 {
 .two-col p,
 address span {
   color: var(--muted);
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 0 0;
+}
+
+.profile-links a {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--accent-dark);
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--white);
+}
+
+.profile-links svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
 }
 
 .lead {
