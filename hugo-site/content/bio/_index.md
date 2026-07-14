@@ -2,7 +2,7 @@
 title: "Bio & C.V."
 ---
 
-[CV PDF](files/cv.pdf)
+[CV PDF](files/cv-2026-07-14.pdf)
 
 Kosuke Uetake studies digital markets, high-tech industries, and public policy in marketing. His research combines quantitative marketing, industrial organization, and applied microeconomics to understand how firms and consumers behave in platform and data-rich environments.
 
