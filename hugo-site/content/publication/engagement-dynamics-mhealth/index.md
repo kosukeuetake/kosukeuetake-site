@@ -1,5 +1,5 @@
 ---
-title: "Engagement Dynamics in mHealth"
+title: "Does Premium Version Adoption in mHealth Improve User Engagement and Health-Related Outcomes?"
 date: 2026-04-01
 authors: ["Yikun Jiang", "Kosuke Uetake", "Nathan Yang"]
 publication_types: ["journal_article"]

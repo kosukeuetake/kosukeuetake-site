@@ -13,5 +13,5 @@ Phone: 203-432-6049
 
 - [LinkedIn](https://www.linkedin.com/in/kosuke-uetake-93b46525/)
 - [Yale School of Management profile](https://som.yale.edu/faculty-research/faculty-directory/kosuke-uetake)
-- [X](https://som.yale.edu/faculty-research/faculty-directory/kosuke-uetake)
+- [X](https://x.com/Chanman_ECON)
 - [Current Google Site](https://sites.google.com/view/kosukeuetake)
