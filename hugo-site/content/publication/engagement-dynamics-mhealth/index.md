@@ -7,8 +7,8 @@ publication: "Accepted at Marketing Science"
 abstract: "Study of engagement dynamics in mobile health."
 tags: ["mHealth", "healthcare analytics", "behavioral analytics"]
 links:
+  - name: "Published version"
+    url: "https://pubsonline.informs.org/doi/abs/10.1287/mksc.2022.0437"
   - name: "PDF"
     url: "files/papers/engagement-dynamics-mhealth.pdf"
 ---
-
-<!-- TODO: Add the exact published-version URL before publication. -->
